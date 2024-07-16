@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript演示</title>
+    <script type="text/javascript">
+        function selectAll() {
+            // alert("调用成功！！")
+            var sports = document.getElementsByName("sport");
+            // alert(sports)
+            for (var i = 0; i < sports.length; i++) {
+                sports[i].checked = true;
+            }
+        }
+    </script>
+</head>
+<body>
+你会的运动项目：
+<input type="checkbox" name="sport" value="zq" checked="checked">足球
+<input type="checkbox" name="sport" value="tq">台球
+<input type="checkbox" name="sport" value="ppq">乒乓球 <br/><br/>
+<button onclick="selectAll()">全选</button>
+<button onclick="selectNone()">全不选</button>
+<button onclick="selectReverse()">反选</button>
+<br/><br/>
+<img src="../image/1.png" height="100">
+<img src="../image/2.png" height="100">
+<img src="../image/3.png" height="100">
+<br/>
+<input type="button" onclick=""
+       value="猫猫~~，点击切换成小狗"/>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css样例</title>
+    <link rel="stylesheet" href="../css/simple.css">
+    <script type="text/javascript" src="../simple.js"></script>
+    <script type="text/javascript" src="../simple2.js"></script>
+</head>
+<body>
+<div id="div01">
+    成凯璇
+</div><br/>
+<button onclick="hi()">直接定义函数</button><br/>
+<button onclick="f3()">test</button><br/>
+<button onclick="sayOk()">test1</button><br/>
+<button onclick="f4()">test2</button><br/>
+<button>sayHi</button>
+<button id="bt01">sayOK</button><br/>
+
+输入英文单词：
+<input type="text" id="frame" onblur="UpperCase()"/><br />
+输入英文单词：
+<input type="text" id="frame2" />
+<br/>
+你当前的能力水平：
+<select>
+    <option>能力级别</option>
+    <option>初学</option>
+    <option>入门</option>
+    <option>精通</option>
+</select>
+<br/>
+你当前的能力水平：
+<select id="sel01">
+    <option>能力级别</option>
+    <option>初学</option>
+    <option>入门</option>
+    <option>精通</option>
+</select>
+<br/>
+<form action="Getlogin.html" onsubmit="return register()">
+    用户名:<input type="text" name="username"><br/>
+    密　码:<input type="password" name="pwd"><br/>
+    <input type="submit" value="登录"> <input type="reset" value="重新填写">
+</form>
+<br/>
+<br/>
+<form action="Getlogin.html" id="login1">
+    用户名:<input type="text" name="username"><br/>
+    密　码:<input type="password" name="pwd"><br/>
+    <input type="submit" value="登录"> <input type="reset" value="重新填写">
+</form>
+<br/>
+
+<form action="Getlogin.html" id="login2">
+    用户名:<input type="text" name="username">长度4-6<br/>
+    密　码:<input type="password" name="pwd">长度6<br/>
+    确  认:<input type="password" name="pwd2">长度6<br/>
+    邮　箱:<input type="text" name="email">满足基本格式<br/>
+    <input type="submit" value="登录"> <input type="reset" value="重新填写">
+</form>
+<br/>
+你会的运动项目：
+<input type="checkbox" name="sport" value="zq" checked="checked">足球
+<input type="checkbox" name="sport" value="tq">台球
+<input type="checkbox" name="sport" value="ppq">乒乓球 <br/><br/>
+<button onclick="selectAll()">全选</button>
+<button onclick="selectNone()">全不选</button>
+<button onclick="selectReverse()">反选</button>
+<a href="http://www.baidu.com">跳转到百度</a>
+<br/>
+<img src="../image/1.png">
+<img src="../image/2.png">
+<img src="../image/3.png"><br/>
+<input id="input2" type="button" onclick="changeImage()"
+       value="猫猫~~，点击切换成小狗"/>
+<input type="button" onclick="AddImage()"
+       value="点击创建猫猫~~"/>
+<div id="btnList">
+    <div>
+        <button id="btn01">查找 id=java 节点</button>
+    </div>
+    <div>
+        <button id="btn02">查找所有 option 节点</button>
+    </div>
+    <div>
+        <button id="btn03">查找 name=sport 的节点</button>
+    </div>
+    <div>
+        <button id="btn04">查找 id=language 下所有 li 节点</button>
+    </div>
+    <div>
+        <button id="btn05">返回 id=sel01 的所有子节点</button>
+    </div>
+    <div>
+        <button id="btn06">返回 id=sel01 的第一个子节点</button>
+    </div>
+    <div>
+        <button id="btn07">返回 id=java 的父节点</button>
+    </div>
+    <div>
+        <button id="btn08">返回 id=ct 的前后兄弟节点</button>
+    </div>
+    <div>
+        <button id="btn09">读取 id=ct 的 value 属性值</button>
+    </div>
+    <div>
+        <button id="btn10">设置#person 的文本域</button>
+    </div>
+</div>
+<table>
+    <tr>
+        <td align=center colspan="3">星期一菜谱</td>
+        <td rowspan=2>素菜</td>
+        <td>青草茄子</td>
+        <td>花椒扁豆</td>
+    </tr>
+    <tr>
+        <td>小葱豆腐</td>
+        <td>炒白菜</td>
+    </tr>
+    <tr>
+        <td rowspan=2>荤菜</td>
+        <td>油闷大虾</td>
+        <td>海参鱼翅</td>
+    </tr>
+    <tr>
+        <td>红烧肉</td>
+        <td>烤全羊</td>
+    </tr>
+</table>
+<br/>
+<ul>
+    <li>黑暗之魂1</li>
+    <li>黑暗之魂2</li>
+    <li>艾尔登法环</li>
+    <li>血源诅咒</li>
+</ul>
+
+</body>
+</html>
